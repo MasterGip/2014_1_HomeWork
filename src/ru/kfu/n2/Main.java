@@ -28,14 +28,18 @@ public class Main {
 			// System.out.println("!");
 			String[] str;
 			str = bf.readLine().split("\"");
-			
+			boolean b = false;
 			for (int j = 1; j < str.length; j+=2) {
 				//System.out.println("!!!");
 				
 				if(str[j].equals(must)){
 					System.out.println(j/2);
+					b = true;
 				}
 				
+			}
+			if(!b){
+				System.out.println("No");
 			}
 			
 			
